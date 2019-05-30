@@ -1,1 +1,1 @@
-alert("You have a virus!");
+
