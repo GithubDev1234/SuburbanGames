@@ -1,8 +1,6 @@
-<!doctype html>
-
-
+<!DOCTYPE html>
 <html lang="en">
-<title>MARIO64!</title>
+<title>EBONLINE!</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
@@ -15,43 +13,29 @@
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 </style>
 <body>
+
 <div class="w3-row-padding w3-padding-64 w3-container">
   <div class="w3-content">
-   <h1> Not Mario 63!</h1>
+    <h1>EarthBound 2!</h1>
     <code>
      <div id='emul'></div>
-    <script>
- 
- 
- 
-var NepPlayer = "#emu";     // ID of html element where the emulator will be inserted
- 
-var NepEmu = "gba";         // Platform select
- 
-var NepZoom = "enable";     // Add extra button on toolbar to scale up emulator. Disabled by default
- 
-var NepMaxWidth = "1100px"; // Maximum width size of emulator. 870px by default
- 
-var NepLang = "en";         // Interface language of the emulator. EN by default
- 
-var EmuN64air = true;    // ( only for N64 ) Swaps analog and dpad, need for some games like Kirby. Disabled ("false") by default
- 
-var gameUrl = "EarthTwo.gba"; // Game Url
-var NjsScript=document.createElement( 'script' );
-NjsScript.src="//mem.neptunjs.com/njs/njsLoader.js";
-document.body.appendChild(NjsScript);
- 
-
-
+      <script>
+        var NepPlayer = "#emul";
+        var NepEmu = "gba";
+        var NepLang = "en";
+        var NepZoom = "enable";
+        var gameUrl = "EarthTwo.gba";
+        var NepColor = "#f44336";
+        var NjsScript=document.createElement( 'script' );
+        NjsScript.src="//mem.neptunjs.com/njs/njsLoader.js";
+        document.body.appendChild(NjsScript);
      </script>
     </code>
   </div>
 </div>
+	
+<div w3-include-html="/MODULES/navbar.html"></div>
+<script src="/MODULES/include.js"></script>
 
-<script src="main.js"></script>
-<div w3-include-html="navbar.html"></div>
-
-<a href="Website test 2.html">Back to main page</a>
 </body>
-
 </html>
