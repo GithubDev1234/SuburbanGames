@@ -1,44 +1,44 @@
 <!doctype html>
 
-<html>
+
+<html lang="en">
+<title>EBONLINE!</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
-<meta charset="utf-8" />
-<meta name="R-18ms amirite?" cotent"You know what, eh.">
-<meta name="description" content="Rs that I like">
-<link rel="stylesheet" type="text/css" href="css/main.css">
-<title>Rs</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+</style>
 <body>
-<h1>Rom hacks!</h1>
-<ul>
-<li>mario sixtyforks
-<code>
-<script>
- 
- 
- 
-var NepPlayer = "#emu";     // ID of html element where the emulator will be inserted
- 
-var NepEmu = "n64";         // Platform select
- 
-var NepZoom = "enable";     // Add extra button on toolbar to scale up emulator. Disabled by default
- 
-var NepMaxWidth = "1100px"; // Maximum width size of emulator. 870px by default
- 
-var NepLang = "en";         // Interface language of the emulator. EN by default
- 
-var EmuN64air = true;    // ( only for N64 ) Swaps analog and dpad, need for some games like Kirby. Disabled ("false") by default
- 
-var gameUrl = "http://neptunjs.xyz/roms/n64/Super Mario 64 (USA).zip"; // Game Url
- 
-<script>
- 
-<script src="https://mem.neptunjs.com/njs/njsLoader.js" type="text/javascript"> //NeptunJS lib
-</code>
-<li>Bound to Earth
-<li>Bound to Earth 2
-<li> Bound to Hell by toby fox
-</ul>
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+   <h1>EarthBound Zero!</h1>
+    <code>
+     <div id='emul'></div>
+      <script>
+        var NepPlayer = "#emul";
+        var NepEmu = "nes";
+        var NepLang = "en";
+        var NepZoom = "enable";
+        var gameUrl = "C:\Users\LoFAn\Documents\GitHub\SuburbanGamez\Rom Hacks\EarthZero.nes";
+        var NepColor = "#f44336";
+        var NjsScript=document.createElement( 'script' );
+        NjsScript.src="//mem.neptunjs.com/njs/njsLoader.js";
+        document.body.appendChild(NjsScript);
+     </script>
+    </code>
+  </div>
+</div>
+
+<script src="main.js"></script>
+<div w3-include-html="navbar.html"></div>
+
 <a href="Website test 2.html">Back to main page</a>
 </body>
-</head>
+
 </html>
