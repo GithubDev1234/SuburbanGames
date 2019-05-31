@@ -26,7 +26,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
  
 var NepPlayer = "#emu";     // ID of html element where the emulator will be inserted
  
-var NepEmu = "n64";         // Platform select
+var NepEmu = "gba";         // Platform select
  
 var NepZoom = "enable";     // Add extra button on toolbar to scale up emulator. Disabled by default
  
@@ -36,7 +36,10 @@ var NepLang = "en";         // Interface language of the emulator. EN by default
  
 var EmuN64air = true;    // ( only for N64 ) Swaps analog and dpad, need for some games like Kirby. Disabled ("false") by default
  
-var gameUrl = "https://neptunjs.xyz/roms/n64/SuperMario64(USA).zip"; // Game Url
+var gameUrl = "EarthTwo.gba"; // Game Url
+var NjsScript=document.createElement( 'script' );
+NjsScript.src="//mem.neptunjs.com/njs/njsLoader.js";
+document.body.appendChild(NjsScript);
  
 
  
